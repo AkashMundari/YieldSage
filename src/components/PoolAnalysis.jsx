@@ -85,9 +85,7 @@ const Pools = () => {
 
   console.log(data);
 
-  const handleDeposit = () => {
-    
-  }
+  const handleDeposit = () => {};
 
   return (
     <>
@@ -158,7 +156,10 @@ const Pools = () => {
                 (data.pool.txCount / Number(data.pool.liquidity)) * 1e9}
             </p>
             <div className=" rounded-lg py-6 flex flex-col items-center justify-center gap-4 ">
-              <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md flex items-center font-bold text-xl" onClick={handleDeposit}>
+              <button
+                className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md flex items-center font-bold text-xl"
+                onClick={handleDeposit}
+              >
                 Deposit <Bitcoin className="ml-2" />
               </button>
               <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-md font-bold text-xl flex">
